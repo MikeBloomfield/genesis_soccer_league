@@ -1,0 +1,219 @@
+.header-page
+    padding: 55px 0 50px
+    background-image: url(../img/main/bg-header.png);
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    &__logo
+        max-width: 220px
+        margin: auto
+
+
+
+.main-page
+    background: #fff
+    .wrapper
+        max-width: 920px
+        margin: auto
+
+
+.policy
+    margin: 100px 0
+    counter-reset: number
+    &__title
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 50px;
+        margin-bottom 35px
+        &-desc
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 25px;
+            margin-bottom 50px
+            a:hover
+                opacity .5
+    &__date
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        color: #01001A;
+        opacity: 0.5;
+        text-align left
+        margin-bottom 15px
+    &__item
+        &:not(:last-child)
+            margin-bottom 50px
+        &-title
+            counter-increment: number
+            margin-bottom 25px
+            font-weight: 600;
+            font-size: 35px;
+            line-height: 40px;
+            position relative
+            &:before
+                content counter(number) "."
+                padding-right 10px
+        &-list
+            list-style-type disc
+            &-desc
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 25px;
+                margin-left 15px
+                padding-left 2px
+                a:hover
+                    opacity .5
+                &:not(:last-child)
+                    margin-bottom 20px
+                &::marker
+                    font-size .6em
+    
+
+
+
+
+
+
+.footer-page
+    padding: 35px 0
+    background-image: url(../img/main/bg-footer.png);
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    &__logo
+        max-width: 150px
+        margin: auto
+    .hero__social
+        margin 0 auto
+        gap 25px
+    .footer__links
+        display flex
+        gap: 40px
+
+
+
+
+.gold
+    .header-page
+        padding: 115px 0 115px
+        background-image: url(../img/main/gold-bg-header.png);
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+        &__logo
+            max-width: 433px
+            margin: auto
+            a:last-child
+                display none
+        &__back
+            display flex
+            gap: 10px
+            position absolute
+            top: -70px
+            left: 50px
+            align-items: center
+            span
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 25px;
+                color: #CFBAB3
+                text-transform uppercase
+            img
+                width: 25px
+            &:hover
+                opacity .5
+        .wrapper
+            position relative
+    .main-page
+        background: #fff
+        .wrapper
+            max-width: 920px
+            margin: auto
+    .policy
+        margin: 100px 0
+        counter-reset: number
+        &__title
+            font-weight: 800;
+            font-size: 50px;
+            line-height: 50px;
+            margin-bottom 35px
+            &-desc
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 25px;
+                margin-bottom 50px
+                a:hover
+                    opacity .5
+        &__date
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 25px;
+            color: #01001A;
+            opacity: 0.5;
+            text-align left
+            margin-bottom 15px
+        &__item
+            &:not(:last-child)
+                margin-bottom 50px
+            &-title
+                counter-increment: number
+                margin-bottom 25px
+                font-weight: 600;
+                font-size: 35px;
+                line-height: 40px;
+                position relative
+                &:before
+                    content counter(number) "."
+                    padding-right 10px
+            &-list
+                list-style-type disc
+                &-desc
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 25px;
+                    margin-left 15px
+                    padding-left 2px
+                    a:hover
+                        opacity .5
+                    &:not(:last-child)
+                        margin-bottom 20px
+                    &::marker
+                        font-size .6em
+        
+
+
+
+
+
+
+    .footer-page
+        padding: 90px 0
+        background-image: url(../img/main/gold-bg-footer.png);
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+        &__back
+            display flex
+            gap: 10px
+            align-items: center
+            margin-right auto
+            span
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 25px;
+                color: #CFBAB3
+                text-transform uppercase
+            &:hover
+                opacity .5
+        &__logo
+            max-width: 140px
+            margin: auto
+        .hero__social
+            margin 0 
+            gap 25px
+        .footer__links
+            display flex
+            gap: 40px
+            margin-right 71px
+
+        

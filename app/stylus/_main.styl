@@ -1,0 +1,492 @@
+.header
+	margin-top 60px
+	margin-bottom 40px
+	width 100%
+	min-width $min-width
+	order 1
+	&__logo
+		max-width: 196px
+		margin: auto
+.main-wrapper
+	padding 0 0 0 0
+	min-width $min-width
+	width 100%
+	position relative
+	min-height 100%
+	display flex
+	flex-direction column
+	justify-content center
+	overflow: hidden
+	overflow-y: auto
+.announcement
+	background-image: url(../img/main/bg.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%
+	background-size: cover
+	background-color: #070208
+.wrapper
+	min-width $min-width
+	max-width $max-width
+	padding 0 40px 0 40px
+	margin 0 auto
+	position relative
+
+/* titles */
+p
+	font($base-font-size, $base-line-height, $text-color, $custom-font-family, 400)
+
+h1
+	font($font-size-h1, $line-height-h1, $title-color, $custom-font-family, 700)
+
+h2
+	font($font-size-h2, $line-height-h2, $title-color, $custom-font-family, 700)
+
+h3
+	font($font-size-h3, $line-height-h3, $title-color, $custom-font-family, 700)
+
+.main
+	min-width $min-width
+	width 100%
+	order 2
+	position relative
+	// flex-grow: 0
+	.hidden
+		display none
+
+
+.hero
+	&__title
+		font-style: italic;
+		font-weight: 800;
+		font-size: 65px;
+		line-height: 75px;
+		text-align: center;
+		color: #FFFFFF;
+		margin-bottom 40px
+	&__desc
+		font-style: normal;
+		font-weight: 600;
+		font-size: 30px;
+		line-height: 50px;
+		color: #B0BACA;
+		text-align center
+		max-width: 750px
+		margin: auto
+	&__item
+		display inline-block
+		width: 900px
+		margin: 0 50px 0
+		
+	&__wrapper
+		width: 770px
+		margin: auto
+		overflow-x: hidden
+	&__input
+		width: 480px
+		background: url(../img/main/input-bg.png)
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		background-position: center
+		position relative;
+		margin: 45px auto 50px
+		border-radius: 5px;
+		&-inner
+			width: 70%
+			border: none
+			padding: 20px 30px
+			background: transparent
+			&::placeholder
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 15px;
+				line-height: 20px;
+				color: rgba(23, 23, 23, .7);
+		&-link
+			position absolute
+			font-style: normal;
+			font-weight: 600;
+			font-size: 15px;
+			line-height: 20px;
+			text-align: center;
+			color: #FFFFFF;
+			display block
+			width: 140px
+			padding: 15px 0
+			top: 50%
+			right: 5px
+			transform: translateY(-50%)
+			&:hover
+				&:before
+					opacity 1
+			&:after
+				content: ""
+				width: 100%
+				height: 100%
+				display block
+				position absolute
+				top: 0
+				left: 0
+				background: url(../img/main/btn-bg.png)
+				background-size: 100% 100%
+				background-repeat: no-repeat
+				background-position: center
+				z-index -2
+				transition: $default-transition
+			&:before
+				content: ""
+				width: 100%
+				height: 100%
+				display block
+				position absolute
+				top: 0
+				left: 0
+				background: url(../img/main/btn-bg-hover.png)
+				background-size: 100% 100%
+				background-repeat: no-repeat
+				background-position: center
+				z-index -1
+				transition: $default-transition
+				opacity 0
+	&__abs
+		width 65.2%
+		min-width: 940px
+		position absolute
+		bottom: -100px
+		left: 47%
+		transform: translateX(-50%)
+		z-index -1
+	&__abs-2
+		width 533px
+		position absolute
+		bottom: -105px
+		left: 43%
+		transform: translateX(-50%)
+		z-index -1
+	&__social
+		display flex
+		max-width: 240px
+		margin: 0 auto 85px
+		gap: 40px
+		&-item
+			width: 30px
+			transition: $default-transition
+			img
+				transition: $default-transition
+			&:hover
+				img
+					transform: translateY(-3px)
+
+.footer
+	width 100%
+	min-width $min-width
+	order 3
+	margin-bottom 60px
+	&__wrapper
+		display flex
+		gap: 40px
+		justify-content: center
+		align-items: center
+		max-width: 840px
+		margin: auto
+	&__link
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 20px;
+		color: #FFFFFF;
+		position relative
+		&:before
+			content: ""
+			position: absolute
+			bottom: -3px
+			height: 1px
+			left: 0
+			right: 0
+			background: #fff
+			transform: scaleX(0)
+			transform-origin: right center
+			transition: transform .3s, transform-origin 0s
+		&:hover
+			&:before
+				transform: scaleX(1)
+				transform-origin: left center
+		
+
+		
+
+
+
+.slick-track
+	display flex
+
+
+.slick-dots
+	background transparent
+	left: 0
+	bottom: -10px
+.slick-dots li
+	background transparent
+
+.slick-dots li.slick-active button:before
+	content: ""
+	background: #FF013E;
+	height: 6px
+	width: 6px
+	border-radius: 50px
+	left: 50%
+	top: 50%
+	transform: translate(-50%, -50%)
+	opacity 1
+.slick-dots li
+	margin: 0 2px
+
+.slick-dots li button:before
+	content: ""
+	background: #fff
+	height: 6px
+	width: 6px
+	border-radius: 50px
+	left: 50%
+	top: 50%
+	transform: translate(-50%, -50%)
+	opacity 1
+
+
+.slick-prev:before, .slick-next:before
+	content ""
+
+
+.slick-prev.slick-arrow, .slick-next.slick-arrow
+	display none  !important
+
+
+
+
+
+
+
+
+
+
+
+
+.gold.announcement
+	background-image: url(../img/main/gold-bg.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%
+	background-size: cover
+	background-color: #070208
+	.header
+		margin-top 70px
+		margin-bottom 0
+		width 100%
+		min-width $min-width
+		margin-bottom 80px
+		order 1
+		&__logo
+			max-width: 120px
+			margin: 0
+		&__organisation
+			max-width: 361px
+			margin-bottom 45px
+			a:last-child
+				display none
+		&__wrapper
+			display flex
+			justify-content: center
+			max-width: 1180px
+			padding: 0 30px
+	.hero
+		&__title
+			font-family "Norwester"
+			font-weight: 400;
+			font-style normal
+			font-size: 80px;
+			line-height: 90px;
+			text-align: center;
+			color: #FFFFFF;
+			margin-bottom 100px
+			text-align left
+		&__social
+			display flex
+			max-width: 240px
+			margin: 0
+			gap: 25px
+			&-item
+				width: 34px
+				transition: $default-transition
+		&__container
+			display flex
+			justify-content: space-between
+			max-width: 950px
+			margin: auto
+			padding: 30px 15px
+			&-right
+				.footer__wrapper
+					display none
+		&__card
+			max-width: 255px;
+			margin: auto;
+			perspective: 600px
+			transform-origin: center
+			position relative
+			left: -130px
+			bottom: -35px
+			&-wrapper
+				transform: rotateY(-20deg)
+				&.active
+					animation: 5s rotates infinite forwards
+				&-abs
+					width: 560px
+					position absolute
+					top: 5%
+					left: -55%
+					&-inner
+						&.active
+							animation: 5s shine infinite forwards 
+				&-abs-2
+					width: 200px
+					position absolute
+					top: 10%
+					left: 20%
+					z-index -1
+					&-inner
+						&.active
+							animation: 5s rise infinite linear 
+				&-abs-3
+					width: 572px
+					position absolute
+					top: -45%
+					left: -51%
+					z-index -2
+					&-inner
+						&.active
+							animation: 5s scale infinite linear
+				img
+					display none
+				
+	.footer
+		width 100%
+		min-width $min-width
+		order 3
+		margin-bottom 75px
+		&__wrapper
+			display flex
+			justify-content: space-between
+			align-items: flex-start
+			max-width: 1180px
+			margin: auto
+			flex-direction: column-reverse
+			&-inner
+				display flex
+				gap: 25px
+		&__link
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 20px;
+			color: #FFFFFF;
+
+
+
+
+
+
+
+
+@keyframes rotates {
+	
+
+	0% {
+		transform: rotateY(-20deg)
+		
+		}
+	50% {
+		transform: rotateY(-20deg)
+		
+		}
+	90% {
+		transform: rotateY(-380deg)
+		
+		}
+	100% {
+		transform: rotateY(-380deg)
+		
+		}
+	
+	
+	
+	}
+
+
+@keyframes shine {
+	
+
+	0% {
+		opacity 1
+		
+		}
+	45% {
+		opacity 1
+		
+		}
+	80% {
+		opacity .2
+		
+		}
+
+	100% {
+		opacity 1
+		
+		}
+	
+	}
+
+@keyframes rise {
+	
+
+	0% {
+		opacity 1
+		transform: translateY(0)
+		
+		}
+
+	100% {
+		opacity 0
+		transform: translateY(-100%)
+		}
+	
+	}
+@keyframes scale {
+	
+
+	0% {
+		transform: scale(1)
+		}
+
+	50% {
+		transform: scale(.1)
+		opacity 0
+		}
+	70% {
+		transform: scale(.1)
+		opacity 0
+
+		}
+	85% {
+		transform: scale(1)
+		}
+
+	90% {
+		transform: scale(1.2)
+		}
+
+	100% {
+		transform: scale(1)
+		}
+	
+	}
+
+
+
+.show
+	display block  !important

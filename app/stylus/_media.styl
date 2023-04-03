@@ -1,0 +1,247 @@
+/*==========  Desktop First  ==========*/
+
+// /* Large Devices, Wide Screens */
+// @media (max-width : 1200px)
+// /* Medium Devices, Desktops */
+// @media (max-width : 992px)
+// /* Small Devices, Tablets */
+@media (max-width : 870px)
+
+    .wrapper
+        padding: 0 20px
+
+    .announcement
+        background-image: url(../img/main/bg-phone.jpg);
+        background-repeat: no-repeat;
+        background-position: 50% 50%
+        background-size: cover
+        background-color: #0A0025
+        .wrapper
+            padding: 0
+    .gold.announcement
+        background-image: url(../img/main/gold-bg-phone.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%
+        background-size: cover
+        .header
+            margin-top 45px
+            margin-bottom 0
+            &__logo
+                max-width: 100px
+            &__organisation
+                max-width: 134px
+                a:first-child
+                    display none
+                a:last-child
+                    display block
+            &__wrapper
+                justify-content: center
+                gap: 40px
+        .footer
+            bottom: 0
+        .hero
+            &__title
+                font-size 50px
+                line-height 50px
+                margin-top 0
+                margin-bottom 75px
+            &__card
+                max-width: 230px;
+                margin-top: 0px;
+                left: 0
+                bottom: 0
+                margin-bottom 75px
+                &-wrapper-abs
+                    top: 5%
+                    left: -72%
+                &-wrapper-abs-2
+                    left: 14%
+                    top: 3%
+            &__container
+                flex-direction: column
+                &-left
+                    display flex
+                    flex-direction: column
+                    align-items: center
+                    .footer__wrapper
+                        display none
+                &-right
+                    display flex
+                    flex-direction: column
+                    align-items: center
+                    .footer__wrapper
+                        display block
+                        display flex
+                        flex-direction: column
+                        align-items: center
+                        gap: 35px
+                        margin-bottom 35px
+
+
+        .footer__wrapper
+            flex-direction: column-reverse
+            &-inner
+                gap: 30px
+        .hero
+            &__social
+                gap: 40px
+        
+    .header
+        margin: 60px auto 30px
+    .hero
+        &__title
+            font-size: 60px;
+            line-height: 60px;
+            max-width: 300px
+            margin: 0 auto 25px
+        &__desc
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            color: #B0BACA;
+            width: 315px
+            font-weight 500
+        &__wrapper
+            width: 315px
+        &__input
+            margin: 45px auto 35px
+            width: 315px
+            &-inner
+                width: 60%
+            &-link
+                width: 120px
+                transform: translateY(-50%) skew(1.5deg);
+        &__social
+            margin-bottom 35px
+
+        &.show
+            display none
+        &.hidden
+            display block
+        &__abs
+            width: 105.2%;
+            bottom: 130px;
+        
+    .footer
+        margin-bottom 90px
+        &__wrapper
+            gap 30px
+
+
+    .footer-page
+        .footer__wrapper
+            flex-direction: column
+            gap: 25px
+        .hero__social
+            gap: 35px
+            order: 1
+        .footer__links
+            order: 2
+
+    .gold
+        .footer-page
+            .footer__wrapper
+                flex-direction: column
+                gap: 25px
+            .hero__social
+                gap: 35px
+                order: 1
+            .footer__links
+                order: 2
+                margin-right 0
+        .footer-page__back
+            display none
+
+
+@media (max-width : 568px)
+
+    .gold
+        .header-page
+            &__back
+                top: -10px
+                left: 30px
+                span
+                    display none
+            &__logo
+                a:first-child
+                    display none
+                a:last-child
+                    display block
+
+    .hero
+        &__abs
+            display none
+    .main
+        .hero__abs-2.hidden
+            display block
+            bottom: 35px
+
+@media (max-width : 425px)
+    .main .hero__abs-2.hidden
+        bottom: -120px
+
+    .header-page
+        padding: 20px 0 26px
+        background-image: url(../img/main/bg-header-phone.png);
+        &__logo
+            max-width: 130px
+    .gold        
+        .header-page
+            padding: 34px 0 34px
+            background-image: url(../img/main/gold-bg-header-phone.png);
+            &__logo
+                max-width: 120px
+    .gold
+        .footer-page
+            padding: 40px 0 40px
+            background-image: url(../img/main/gold-bg-footer-phone.png);
+            &__logo
+                max-width: 80px
+    .footer-page
+        padding: 20px 0 30px
+        background-image: url(../img/main/bg-footer-phone.png);
+        &__logo
+            max-width: 80px
+    
+    .policy
+        margin: 50px 0
+        &__title
+            font-size 35px
+            line-height 40px
+            text-align center
+        &__item
+            &-title
+                font-size 25px
+                text-align center
+    .footer-page .footer__links
+            gap 30px
+
+
+    .gold.announcement
+        .hero__card
+            width: 518px
+            margin-top: -3px;
+            left: 0
+            .hero__card-wrapper-abs
+                width: 375px
+                top: 15%
+                left: -31%
+
+@media (max-width : 414px)
+    .main .hero__abs-2.hidden
+        bottom: 30px
+
+
+@media (max-width: 390px)
+    .main .hero__abs-2.hidden
+        bottom: -120px
+
+
+
+
+        
+@media (max-width: 375px)
+   .main .hero__abs-2.hidden
+        bottom: -120px
+
+
